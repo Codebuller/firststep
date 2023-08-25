@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Info
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A training project to consolidate knowledge about React
+The project is a 'blog' where you can delete/add a post, sort posts, register, etc.
+Key skills: API, axios, custom and standart hooks, sorting, observer API, routing with React-router
 
 ## Available Scripts
 

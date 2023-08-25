@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PostService from '../API/PostServise';
 import PostFilter from '../components/PostFilter';
 import PostForm from '../components/PostForm';
@@ -28,7 +28,7 @@ function Posts() {
   
   const [fetchPosts, isPostsLoading, postError] = useFetching( async () => {
     const response = await PostService.getAll(limit, page );
-      setPosts([... posts,... response.data]);
+      setPosts([...posts , ...response.data]);
       const totalCount = response.headers['x-total-count']; 
       setTotalPages(getPageCount(totalCount, limit))
   })

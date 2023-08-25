@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MyInput from "../UI/input/MyInput";
 import MySelect from "../UI/Select/MySelect";
 const PostFilter = ({filter, setFilter}) => {
